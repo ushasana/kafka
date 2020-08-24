@@ -23,7 +23,7 @@ public class SSHReadFile {
             JSch jsch = new JSch();
             Session session = jsch.getSession(user, host, port);
             session.setPassword(password);
-            session.setConfig("StrictHostKeyChecking", "no");
+            session.setConfig("StrictHostKeyChecking.", "no");
             System.out.println("Establishing Connection...");
             session.connect();
             System.out.println("Connection established.");
